@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talk+ - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #181818;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #202020;
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      color: #00ff88;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+    .sidebar {
+      background: #202020;
+      padding: 15px;
+      height: 100vh;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: #ccc;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background: #333;
+      border-radius: 8px;
+      color: white;
+    }
+    .feed {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #202020;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Talk+</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">Login</a>
+      <a href="#">Signup</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="#">🏠 Home</a>
+      <a href="#">⭐ Favorites</a>
+      <a href="#">📂 My Posts</a>
+      <a href="#">⚙ Settings</a>
+    </div>
+
+    <div class="feed">
+      <div class="card">
+        <img src="https://placekitten.com/300/200" alt="Post">
+        <p>Sample post description goes here...</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/300/200" alt="Post">
+        <p>Another post with text here...</p>
+      </div>
+      <div class="card">
+        <img src="https://placekitten.com/301/201" alt="Post">
+        <p>Funny cats video post...</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
